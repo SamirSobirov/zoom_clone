@@ -9,7 +9,7 @@ function NavigateLinks() {
     const pathname = usePathname()
     
 
-    return (
+    return (    
         <nav className="w-full flex flex-col gap-3" >
             <Link
                 href={"/home"}
@@ -30,6 +30,8 @@ function NavigateLinks() {
                 <span>Upcoming</span>
             </Link>
             <Link
+
+            
                 href={"/previous-meetings"}
                 className={`w-full rounded-lg flex items-center gap-4 text-[#C9DDFF] p-4 ${pathname === "/previous-meetings" && "bg-[#0E78F9] text-white"} `}
             >
